@@ -5,6 +5,10 @@ $header-padding: get-spacing('md') 0 !default;
 
 $header-is-sticky: false !default;
 
+$logo-bar-background: 'white' !default;
+$logo-bar-color: 'primary' !default;
+$logo-bar-padding: #{get-spacing('md') + get-spacing('sm')} 0 !default;
+
 .header {
   background: theme-get-color($header-background);
   color: theme-get-color($header-color);
@@ -16,5 +20,19 @@ $header-is-sticky: false !default;
   @if $header-is-sticky {
     position: sticky;
     top: 0;
+  }
+}
+
+.header-lower {
+  background: theme-get-color($logo-bar-background);
+  color: theme-get-color($logo-bar-color);
+
+  padding: $logo-bar-padding;
+  width: $header-width;
+
+  @if $header-is-sticky {
+    @extend %shaded;
+    position: sticky;
+    top: 50.4px;
   }
 }
