@@ -1,0 +1,13 @@
+.content {
+  font-family: map-get($fonts, 'base');
+
+  @for $i from 1 through 6 {
+    h#{$i} {
+      margin-bottom: get-spacing('md');
+    }
+
+    p {
+      margin-bottom: get-spacing('sm');
+    }
+  }
+}
