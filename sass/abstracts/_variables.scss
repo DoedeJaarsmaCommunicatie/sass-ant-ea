@@ -41,9 +41,10 @@ $spacing: map-merge($theme-spacing, $spacing);
 
 // Breakpoint variables
 $screens: (
-  'phone': 414px,
-  'tablet': 768px,
-  'desktop': 1240px
+  'sm': 414px,
+  'md': 768px,
+  'lg': 1240px,
+  'xl': 1500px
 ) !default;
 
 // Base font variables
@@ -51,7 +52,7 @@ $screens: (
 $fonts: () !default;
 
 $theme-fonts: (
-  'base': '"Roboto", System-UI',
+  'base': '"Open Sans", System-UI',
   'title': '"Montserrat", "Roboto", System-UI'
 ) !default;
 
