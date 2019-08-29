@@ -1,5 +1,5 @@
 .content {
-  font-family: map-get($fonts, 'base');
+  font-family: get-font('base'), serif;
 
   @for $i from 1 through 6 {
     h#{$i} {
@@ -13,5 +13,5 @@
 }
 
 html {
-  font-family: map-get($fonts, 'base');
+  font-family: get-font('base'), serif;
 }

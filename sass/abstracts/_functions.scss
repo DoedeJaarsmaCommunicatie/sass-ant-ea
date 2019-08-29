@@ -28,3 +28,15 @@
   }
   @return 100% / $columns;
 }
+
+@function get-font($name) {
+  @if not $name {
+    @error 'Font name not supplied';
+  }
+
+  @if not map-has-key($fonts, $name) {
+    @error 'Font key not in ' map-keys($fonts);
+  }
+
+  @return unquote(map-get($fonts, $name));
+}
