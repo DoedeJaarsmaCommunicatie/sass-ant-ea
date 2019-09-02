@@ -32,7 +32,6 @@
 
 %is-flex {
   display: flex;
-  flex: 1 1 auto;
 }
 
 .flex {
@@ -55,4 +54,10 @@
 
 mr-auto {
   margin-right: auto;
+}
+
+hr {
+  color: adjust-color(#707070, $alpha: -0.9);
+  border-width: 1px;
+  border-bottom: 0;
 }

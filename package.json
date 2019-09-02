@@ -3,6 +3,7 @@
   "version": "0.1.4-0",
   "license": "MIT",
   "dependencies": {
+    "bourbon-neat": "^4.0.0",
     "laravel-mix": "^4.1.2"
   },
   "devDependencies": {

@@ -44,7 +44,7 @@ $screens: (
   'sm': 414px,
   'md': 768px,
   'lg': 1240px,
-  'xl': 1500px
+  'xl': 1440px
 ) !default;
 
 // Base font variables
@@ -58,11 +58,6 @@ $theme-fonts: (
 
 $fonts: map-merge($theme-fonts, $fonts);
 
-// Base grid variables
-$grid-cols: 12 !default;
-$grid-width: column-width($grid-cols) !default;
-$grid-gap: 1rem !default;
-
 // Sizes
 $sizes: () !default;
 
@@ -73,3 +68,9 @@ $theme-sizes: (
 ) !default;
 
 $sizes: map-merge($theme-sizes, $sizes);
+
+$grid-columns: 12 !default;
+$grid-gap: 20px !default;
+
+//noinspection Stylelint
+$WP_ADMIN_BAR_HEIGHT: 32px;
